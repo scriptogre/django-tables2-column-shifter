@@ -20,7 +20,7 @@ $(document).ready(function(){
     var COLUMN_SHIFTER_STORAGE_ACCESOR = "django_tables2_column_shifter";
 
     // Return storage structure for shifter
-    // If structure does'n exist in web storage
+    // If structure doesn't exist in web storage
     // will be return empty object
     var get_column_shifter_storage = function(){
         var storage = localStorage.getItem(COLUMN_SHIFTER_STORAGE_ACCESOR);
@@ -142,7 +142,7 @@ $(document).ready(function(){
         }
     };
 
-    // Set icon imgae visibility for button state
+    // Set icon image visibility for button state
     var set_icon_for_state = function( $btn, state ) {
         if (state === "on") {
             $btn.find("img.uncheck").hide();
